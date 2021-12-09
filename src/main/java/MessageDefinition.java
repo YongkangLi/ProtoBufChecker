@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class Message {
+public class MessageDefinition {
     private final String name;
 
     private final ConcurrentHashMap<String, EnumDefinition> enumDefinitions;
-    private final ConcurrentHashMap<String, Message> nestedTypes;
+    private final ConcurrentHashMap<String, MessageDefinition> nestedTypes;
     private final ConcurrentHashMap<String, Field> fields;
 
     private static class Field {
@@ -69,7 +69,7 @@ public class Message {
         }
     }
 
-    public Message(DescriptorProtos.DescriptorProto descriptorProto) {
+    public MessageDefinition(DescriptorProtos.DescriptorProto descriptorProto) {
         name = descriptorProto.getName();
         enumDefinitions = new ConcurrentHashMap<>();
         nestedTypes = new ConcurrentHashMap<>();
@@ -81,8 +81,8 @@ public class Message {
         }
 
         for (DescriptorProtos.DescriptorProto nestedTypeDescriptorProto: descriptorProto.getNestedTypeList()) {
-            Message message = new Message(nestedTypeDescriptorProto);
-            nestedTypes.put(message.getName(), message);
+            MessageDefinition messageDefinition = new MessageDefinition(nestedTypeDescriptorProto);
+            nestedTypes.put(messageDefinition.getName(), messageDefinition);
         }
         for (DescriptorProtos.FieldDescriptorProto fieldDescriptorProto: descriptorProto.getFieldList()) {
             Field field = new Field(fieldDescriptorProto);
@@ -99,7 +99,7 @@ public class Message {
     }
 
     private void seeNestedTypes(String indent) {
-        nestedTypes.values().forEach(message -> message.see(indent));
+        nestedTypes.values().forEach(messageDefinition -> messageDefinition.see(indent));
     }
 
     private void seeFields(String indent) {

@@ -4,9 +4,34 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class ProtoBufFile {
-    private final ConcurrentHashMap<String Message> Message
-    public ProtoBufFile(String path) {
+public class DescriptorSet {
+    private final ConcurrentHashMap<String, ProtoBufFile> protoBufFiles;
+
+    private static class ProtoBufFile {
+        private final String name;
+        private final ConcurrentHashMap<String, MessageDefinition> messageDefinitions;
+
+        public ProtoBufFile(DescriptorProtos.FileDescriptorProto fileDescriptorProto) {
+            name = fileDescriptorProto.getName();
+            messageDefinitions = new ConcurrentHashMap<>();
+
+            for (DescriptorProtos.DescriptorProto descriptorProto: fileDescriptorProto.getMessageTypeList()) {
+                MessageDefinition messageDefinition = new MessageDefinition(descriptorProto);
+                messageDefinitions.put(messageDefinition.getName(), messageDefinition);
+            }
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void see() {
+            System.out.println("<" + name + ">");
+            messageDefinitions.values().forEach(messageDefinition -> messageDefinition.see(""));
+        }
+    }
+
+    public DescriptorSet(String path) {
         DescriptorProtos.FileDescriptorSet fileDescriptorSet = null;
         try {
             FileInputStream in = new FileInputStream(path);
@@ -16,11 +41,15 @@ public class ProtoBufFile {
         }
         assert fileDescriptorSet != null;
 
-        for (DescriptorProtos.FileDescriptorProto fileDescriptorProto: fileDescriptorSet.getFileList()) {
-            for (DescriptorProtos.DescriptorProto descriptorProto: fileDescriptorProto.getMessageTypeList()) {
-                Message message = new Message(descriptorProto);
-                message.see("");
-            }
+        protoBufFiles = new ConcurrentHashMap<>();
+
+        for (DescriptorProtos.FileDescriptorProto fileDescriptorProto : fileDescriptorSet.getFileList()) {
+            ProtoBufFile protoBufFile = new ProtoBufFile(fileDescriptorProto);
+            protoBufFiles.put(protoBufFile.getName(), protoBufFile);
         }
+    }
+
+    public void see() {
+        protoBufFiles.values().forEach(ProtoBufFile::see);
     }
 }
