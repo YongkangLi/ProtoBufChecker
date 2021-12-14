@@ -1,6 +1,4 @@
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -129,33 +127,11 @@ public class Utils {
         }
     }
 
-    public static void compareDescriptorSets(String older, String newer, Path relativePath) {
-        compareDescriptorSets(new DescriptorSet(older), new DescriptorSet(newer), relativePath);
-    }
-
     public static void compareVersions(Version older, Version newer) {
-        String oldDescriptor = "./test/old/tmp.desc";
-        String newDescriptor = "./test/new/tmp.desc";
-        try {
-            Files.find(older.getPath(), Integer.MAX_VALUE, (filePath, fileAttr) -> isValid(filePath)).forEach(protoPath -> {
-                Path relativePath = older.getPath().relativize(protoPath);
-                Path newProtoPath = newer.getPath().resolve(relativePath);
-                if (new File(String.valueOf(newProtoPath)).exists()) {
-                    String compileOld = "protoc " + older.getIncludes() + "--descriptor_set_out=" + oldDescriptor + " " + protoPath;
-                    String compileNew = "protoc " + newer.getIncludes() + "--descriptor_set_out=" + newDescriptor + " " + newProtoPath;
-                    runCommand(compileOld);
-                    runCommand(compileNew);
-                    if (new File(oldDescriptor).exists() && new File(newDescriptor).exists()) {
-                        compareDescriptorSets(oldDescriptor, newDescriptor, relativePath);
-                        runCommand("rm " + oldDescriptor);
-                        runCommand("rm " + newDescriptor);
-                    } else {
-                        System.out.println("\u001B[31m" + "Error happened when compiling" + relativePath +" !\n" + "\033[0m");
-                    }
-                }
-            });
-        } catch (IOException e) {
-            e.printStackTrace();
+        for (Path relativePath : older.getDescriptorSets().keySet()) {
+            if (newer.getDescriptorSets().containsKey(relativePath)) {
+                compareDescriptorSets(older.getDescriptorSets().get(relativePath), newer.getDescriptorSets().get(relativePath), relativePath);
+            }
         }
     }
 }
