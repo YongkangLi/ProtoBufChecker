@@ -21,9 +21,8 @@ public class Utils {
         if (isWindows) {
             processBuilder.command("cmd.exe", "/c", command);
         } else {
-            processBuilder.inheritIO().command("sh", "-c", command);
+            processBuilder.command("sh", "-c", command);
         }
-        processBuilder.redirectErrorStream(true);
 
         Process process = null;
         try {
@@ -66,7 +65,8 @@ public class Utils {
     }
 
     private static void compareFields(ConcurrentHashMap<String, MessageDefinition.Field> oldFields,
-                                      ConcurrentHashMap<String, MessageDefinition.Field> newFields) {
+                                      ConcurrentHashMap<String, MessageDefinition.Field> newFields,
+                                      Path relativePath) {
         for (String fieldName : oldFields.keySet()) {
             if (newFields.containsKey(fieldName)) {
                 // Both Versions have this field.
@@ -76,34 +76,44 @@ public class Utils {
                 // Compare their tag numbers.
                 if (oldField.getTag() != newField.getTag()) {
                     // Different tag number!
-                    System.out.println("\u001B[31m" + "ERROR: tag number of field '" + fieldName + "' has changed across versions!!!" + "\033[0m");
+                    System.out.println("\u001B[31m" + "ERROR: tag number of field '" + fieldName +
+                            "' has changed across versions!!! " +
+                            "(" + relativePath + ") " + "\033[0m");
                 }
 
                 // Compare their labels;
                 if (oldField.isRequired() ^ newField.isRequired()) {
                     // Different required properties!
-                    System.out.println("\033[0;33m" + "WARNING: field '" + fieldName + "' is required in one version but non-required in another!" + "\033[0m");
+                    System.out.println("\033[0;33m" + "WARNING: field '" + fieldName +
+                            "' is required in one version but non-required in another! " +
+                            "(" + relativePath + ") " + " \033[0m");
                 }
             } else if (oldFields.get(fieldName).isRequired()){
                 // Old version has this required field, but new version does not have this field at all!
-                System.out.println("\u001B[31m" + "ERROR: a required field '" + fieldName + "' is deleted in new version!!!" + "\033[0m");
+                System.out.println("\u001B[31m" + "ERROR: a required field '" + fieldName +
+                        "' is deleted in new version!!! " +
+                        "(" + relativePath + ") " + "\033[0m");
             }
         }
 
         for (String fieldName : newFields.keySet()) {
             if ((!oldFields.containsKey(fieldName)) && (newFields.get(fieldName).isRequired())) {
                 // New version has this required field, but old version does not have this field at all!
-                System.out.println("\u001B[31m" + "ERROR: a required field '" + fieldName + "' is added in new version!!!" + "\033[0m");
+                System.out.println("\u001B[31m" + "ERROR: a required field '" + fieldName +
+                        "' is added in new version!!! " +
+                        "(" + relativePath + ") " + "\033[0m");
             }
         }
     }
 
-    private static void compareMessageDefinition(MessageDefinition oldMessageDefinition, MessageDefinition newMessageDefinition) {
-        compareFields(oldMessageDefinition.getFields(), newMessageDefinition.getFields());
+    private static void compareMessageDefinition(MessageDefinition oldMessageDefinition,
+                                                 MessageDefinition newMessageDefinition,
+                                                 Path relativePath) {
+        compareFields(oldMessageDefinition.getFields(), newMessageDefinition.getFields(), relativePath);
         compareEnumDefinitions(oldMessageDefinition.getEnumDefinitions(), newMessageDefinition.getEnumDefinitions());
     }
 
-    public static void compareDescriptorSets(DescriptorSet older, DescriptorSet newer) {
+    public static void compareDescriptorSets(DescriptorSet older, DescriptorSet newer, Path relativePath) {
         for (String filename : older.getProtoBufFiles().keySet()) {
             if (newer.getProtoBufFiles().containsKey(filename)) {
                DescriptorSet.ProtoBufFile oldProtoBufFile = older.getProtoBufFiles().get(filename);
@@ -112,15 +122,15 @@ public class Utils {
                    if (newProtoBufFile.getMessageDefinitions().containsKey(messageType)) {
                        MessageDefinition oldMessageDefinition = oldProtoBufFile.getMessageDefinitions().get(messageType);
                        MessageDefinition newMessageDefinition = newProtoBufFile.getMessageDefinitions().get(messageType);
-                       compareMessageDefinition(oldMessageDefinition, newMessageDefinition);
+                       compareMessageDefinition(oldMessageDefinition, newMessageDefinition, relativePath);
                    }
                }
             }
         }
     }
 
-    public static void compareDescriptorSets(String older, String newer) {
-        compareDescriptorSets(new DescriptorSet(older), new DescriptorSet(newer));
+    public static void compareDescriptorSets(String older, String newer, Path relativePath) {
+        compareDescriptorSets(new DescriptorSet(older), new DescriptorSet(newer), relativePath);
     }
 
     public static void compareVersions(Version older, Version newer) {
@@ -128,10 +138,6 @@ public class Utils {
         String newDescriptor = "./test/new/tmp.desc";
         try {
             Files.find(older.getPath(), Integer.MAX_VALUE, (filePath, fileAttr) -> isValid(filePath)).forEach(protoPath -> {
-                System.out.println(protoPath);
-                if (protoPath.toString().contains("target")) {
-                    System.out.println(protoPath);
-                }
                 Path relativePath = older.getPath().relativize(protoPath);
                 Path newProtoPath = newer.getPath().resolve(relativePath);
                 if (new File(String.valueOf(newProtoPath)).exists()) {
@@ -139,14 +145,12 @@ public class Utils {
                     String compileNew = "protoc " + newer.getIncludes() + "--descriptor_set_out=" + newDescriptor + " " + newProtoPath;
                     runCommand(compileOld);
                     runCommand(compileNew);
-                    System.out.println("<" + relativePath + ">");
                     if (new File(oldDescriptor).exists() && new File(newDescriptor).exists()) {
-                        compareDescriptorSets(oldDescriptor, newDescriptor);
-                        System.out.println();
+                        compareDescriptorSets(oldDescriptor, newDescriptor, relativePath);
                         runCommand("rm " + oldDescriptor);
                         runCommand("rm " + newDescriptor);
                     } else {
-                        System.out.println("Error during compilation!\n");
+                        System.out.println("\u001B[31m" + "Error happened when compiling" + relativePath +" !\n" + "\033[0m");
                     }
                 }
             });
