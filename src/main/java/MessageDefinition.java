@@ -11,7 +11,7 @@ public class MessageDefinition {
     private final ConcurrentHashMap<String, MessageDefinition> nestedTypes;
     private final ConcurrentHashMap<String, Field> fields;
 
-    private static class Field {
+    public static class Field {
         private final DescriptorProtos.FieldDescriptorProto.Label label;
         private final String type;
         private final String name;
@@ -28,12 +28,20 @@ public class MessageDefinition {
             return name;
         }
 
+        public int getTag() {
+            return tag;
+        }
+
+        public boolean isRequired() {
+            return label.equals(DescriptorProtos.FieldDescriptorProto.Label.LABEL_REQUIRED);
+        }
+
         public void see(String indent) {
             System.out.println(indent + label + " " + type + " " + name + " = " + tag + ";");
         }
     }
 
-    private static class EnumDefinition {
+    public static class EnumDefinition {
         private final String name;
         private final List<Value> valueList;
 
@@ -59,13 +67,24 @@ public class MessageDefinition {
             return name;
         }
 
+        public boolean hasNoDefault() {
+            boolean hasNoZero = true;
+            for (Value value : valueList) {
+                if (value.number == 0) {
+                    hasNoZero = false;
+                    break;
+                }
+            }
+            return hasNoZero;
+        }
+
         public void see(String indent) {
             System.out.println(indent + "enum " + name + " {");
             for (Value value: valueList) {
                 System.out.println(indent + "  " + value.name + " = " + value.number + ";");
             }
             System.out.println(indent + "}");
-            System.out.println("");
+            System.out.println();
         }
     }
 
@@ -94,6 +113,14 @@ public class MessageDefinition {
         return name;
     }
 
+    public ConcurrentHashMap<String, Field> getFields() {
+        return fields;
+    }
+
+    public ConcurrentHashMap<String, EnumDefinition> getEnumDefinitions() {
+        return enumDefinitions;
+    }
+
     private void seeEnumDefinitions(String indent) {
         enumDefinitions.values().forEach(enumDefinition -> enumDefinition.see(indent));
     }
@@ -112,6 +139,6 @@ public class MessageDefinition {
         seeNestedTypes("  " + indent);
         seeFields("  " + indent);
         System.out.println(indent + "}");
-        System.out.println("");
+        System.out.println();
     }
 }

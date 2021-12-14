@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class DescriptorSet {
     private final ConcurrentHashMap<String, ProtoBufFile> protoBufFiles;
 
-    private static class ProtoBufFile {
+    public static class ProtoBufFile {
         private final String name;
         private final ConcurrentHashMap<String, MessageDefinition> messageDefinitions;
 
@@ -19,6 +19,10 @@ public class DescriptorSet {
                 MessageDefinition messageDefinition = new MessageDefinition(descriptorProto);
                 messageDefinitions.put(messageDefinition.getName(), messageDefinition);
             }
+        }
+
+        public ConcurrentHashMap<String, MessageDefinition> getMessageDefinitions() {
+            return messageDefinitions;
         }
 
         public String getName() {
@@ -51,5 +55,9 @@ public class DescriptorSet {
 
     public void see() {
         protoBufFiles.values().forEach(ProtoBufFile::see);
+    }
+
+    public ConcurrentHashMap<String, ProtoBufFile> getProtoBufFiles() {
+        return protoBufFiles;
     }
 }
