@@ -12,7 +12,8 @@ public class Utils {
         String s = path.toString();
         return s.endsWith(PROTO) && !s.contains(TARGET) && !s.contains(SHADED);
     }
-    public static void runCommand(String command) {
+
+    public static int runCommand(String command) {
         boolean isWindows = System.getProperty("os.name").toLowerCase().startsWith(WINDOWS);
 
         ProcessBuilder processBuilder = new ProcessBuilder();
@@ -36,7 +37,8 @@ public class Utils {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        assert exitCode == 0;
+//        assert exitCode == 0;
+        return exitCode;
     }
 
     private static void compareEnumDefinitions(ConcurrentHashMap<String, MessageDefinition.EnumDefinition> oldEnumDefinitions,
