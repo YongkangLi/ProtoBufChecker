@@ -1,6 +1,6 @@
-# ProtoBufChecker:
+# ProtoBufChecker
 
-## What can ProtoBufChecker do:
+## What can ProtoBufChecker do?
 
 ### Serialization Library Compatibility Checker
 ProtoBufChecker analyzes data syntax defined using standard serialization libraries and detect incompatibility across versions, which can lead to upgrade failures.
@@ -20,7 +20,7 @@ Violating the first two rules will definitely lead to upgrade failures caused by
 Violating the third rule may lead to failures, which will be referred to as `WARNING` by ProtoBufChecker, if the new version generates data that does not contain its no-longer-required data member.
 For other type of changes such as changing field type, ProtoBufChecker will output `INFO` level information.
 
-## Build
+## How to build?
 
 Prerequisite: install `protobuf` with:
 
@@ -39,7 +39,7 @@ Build executable jar with:
     $cd ProtoBufChecker
     $mvn package
 
-## Usage
+## How to use?
 
 ### Protocol Buffer Checker
 1. Prepare the application that you would like to check the consistency on the same machine, suppose its path is `path_app`.
@@ -60,7 +60,7 @@ Build executable jar with:
 
    `java -jar target/ProtoBufChecker-1.0-SNAPSHOT.jar -o hbase-rel-2.2.6 -n hbase-rel-2.3.3`
 
-## About the [Paper](https://dl.acm.org/doi/10.1145/3477132.3483577) Section 6.2.2
+## How to reproduce the [Paper](https://dl.acm.org/doi/10.1145/3477132.3483577) Section 6.2.2 ?
 
 1. Checkout the required applications in the DUPChecker/ directory:
 
@@ -86,7 +86,7 @@ Build executable jar with:
 
    `python3 scripts/export.py`
 
-##  Approximate time needed:
+###  Approximate time needed:
 
 1. local machine: macOS 12.1, 64G RAM, 512G disk.
 2. time distribution:
@@ -94,7 +94,7 @@ Build executable jar with:
    1) install dependencies and download required git repos - 10 min
    2) run experiments - ~20 min
 
-## Contributing
+## How to contribute?
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
