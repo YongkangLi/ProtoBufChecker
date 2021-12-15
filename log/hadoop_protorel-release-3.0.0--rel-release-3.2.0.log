@@ -1,0 +1,143 @@
+[31mERROR: a required field 'md5' is deleted in new version!!! (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/datatransfer.proto) [0m
+[31mERROR: a required field 'blockChecksum' is added in new version!!! (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/datatransfer.proto) [0m
+INFO: a message type UpgradeStatusResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type GetSnapshotDiffReportListingRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type GetLocatedFileInfoResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type GetLocatedFileInfoRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type SatisfyStoragePolicyRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type SatisfyStoragePolicyResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type UpgradeStatusRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type GetSnapshotDiffReportListingResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type CompositePlacementConstraintProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type PlacementConstraintProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type RejectedSchedulingRequestProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type NodeAttributeInfoProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type SchedulingRequestProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type NodeToAttributesProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type TimedPlacementConstraintProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type NodeAttributeKeyProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type NodeAttributeProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type NodeToAttributeValueProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type PlacementConstraintMapEntryProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type PlacementConstraintTargetProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type AttributeToNodesProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type ResourceProfilesProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type SimplePlacementConstraintProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type ResourceProfileEntry was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type ResourceSizingProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type NodeAttributesProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/src/main/proto/yarn_server_common_service_protos.proto)
+INFO: a message type LocalFileSystemPathHandleProto was added in new version. (hadoop-common-project/hadoop-common/src/main/proto/FSProtos.proto)
+INFO: a message type NodesToAttributesMappingRequestProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/server/yarn_server_resourcemanager_service_protos.proto)
+INFO: a message type NodesToAttributesMappingResponseProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/server/yarn_server_resourcemanager_service_protos.proto)
+INFO: a message type SnapshotDiffReportListingEntryProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type SnapshotDiffReportListingProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type HdfsPathHandleProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type ProvidedStorageLocationProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type SnapshotDiffReportCursorProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type BlockChecksumOptionsProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type GetAllResourceProfilesResponseProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto)
+INFO: a message type GetNodesToAttributesResponseProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto)
+INFO: a message type GetAllResourceProfilesRequestProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto)
+INFO: a message type GetClusterNodeAttributesRequestProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto)
+INFO: a message type GetResourceProfileRequestProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto)
+INFO: a message type GetResourceProfileResponseProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto)
+INFO: a message type GetAttributesToNodesRequestProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto)
+INFO: a message type GetNodesToAttributesRequestProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto)
+INFO: a message type GetAttributesToNodesResponseProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto)
+INFO: a message type GetClusterNodeAttributesResponseProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto)
+INFO: a message type RemoveMountTableEntryRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateMountTableEntryRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetMountTableEntriesRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeMembershipRecordProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type AddMountTableEntryRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetMountTableEntriesResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeHeartbeatResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateMountTableEntryResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeMembershipStatsRecordProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamenodeRegistrationsRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type AddMountTableEntryResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type RemoveMountTableEntryResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type MountTableRecordProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeHeartbeatRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type RemoteLocationProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetExpiredRegistrationsRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamenodeRegistrationsResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamespaceInfoResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type FederationNamespaceInfoProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateNamenodeRegistrationRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateNamenodeRegistrationResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamespaceInfoRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetFilePathResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/NamenodeProtocol.proto)
+INFO: a message type GetFilePathRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/NamenodeProtocol.proto)
+INFO: a message type GetNextSPSPathResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/NamenodeProtocol.proto)
+INFO: a message type GetNextSPSPathRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/NamenodeProtocol.proto)
+INFO: a message type DockerCredentialTokenIdentifierProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/proto/yarn_security_token.proto)
+INFO: a message type ListRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/AliasMapProtocol.proto
+INFO: a message type ListResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/AliasMapProtocol.proto
+INFO: a message type ReadRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/AliasMapProtocol.proto
+INFO: a message type ReadResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/AliasMapProtocol.proto
+INFO: a message type KeyValueProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/AliasMapProtocol.proto
+INFO: a message type WriteRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/AliasMapProtocol.proto
+INFO: a message type WriteResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/AliasMapProtocol.proto
+INFO: a message type BlockPoolRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/AliasMapProtocol.proto
+INFO: a message type BlockPoolResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/AliasMapProtocol.proto
+INFO: a message type RemoveMountTableEntryRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type EnableNameserviceResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateMountTableEntryRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetDisabledNameservicesResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type StateStoreVersionRecordProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type AddMountTableEntryRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type DisableNameserviceResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeHeartbeatResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateMountTableEntryResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetRouterRegistrationResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type LeaveSafeModeResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamenodeRegistrationsRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type EnterSafeModeRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type EnterSafeModeResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type MountTableRecordProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetExpiredRegistrationsRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamespaceInfoResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetSafeModeResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type DisableNameserviceRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetDisabledNameservicesRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateNamenodeRegistrationResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamespaceInfoRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetSafeModeRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetMountTableEntriesRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type LeaveSafeModeRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetRouterRegistrationsResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeMembershipRecordProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type RouterHeartbeatRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetMountTableEntriesResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetRouterRegistrationRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type RouterHeartbeatResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeMembershipStatsRecordProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type AddMountTableEntryResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type RemoveMountTableEntryResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type RouterRecordProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type DisabledNameserviceRecordProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type EnableNameserviceRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeHeartbeatRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type RemoteLocationProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamenodeRegistrationsResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetRouterRegistrationsRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateNamenodeRegistrationRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type FederationNamespaceInfoProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetCompInstancesRequestProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type StopRequestProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type CancelUpgradeResponseProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type RestartServiceRequestProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type RestartServiceResponseProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type GetCompInstancesResponseProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type CompInstancesUpgradeResponseProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type GetStatusResponseProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type ComponentCountProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type CancelUpgradeRequestProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type FlexComponentsRequestProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type FlexComponentsResponseProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type GetStatusRequestProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type CompInstancesUpgradeRequestProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type UpgradeServiceResponseProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type StopResponseProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto
+INFO: a message type UpgradeServiceRequestProto was added due to a/an added file: hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto

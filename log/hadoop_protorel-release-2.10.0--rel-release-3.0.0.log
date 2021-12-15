@@ -1,0 +1,141 @@
+INFO: a message type HandshakeSecretProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/datatransfer.proto)
+INFO: a message type OpBlockGroupChecksumProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/datatransfer.proto)
+INFO: a message type HAServiceStateResponseProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type MsyncResponseProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type MsyncRequestProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type HAServiceStateRequestProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type GetFsReplicatedBlockStatsRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type GetFsECBlockGroupStatsRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type GetFsECBlockGroupStatsResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type GetFsReplicatedBlockStatsResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type ErasureCodingSection was added in new version. (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/fsimage.proto)
+INFO: a message type ZoneReencryptionStatusProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/encryption.proto)
+INFO: a message type ReencryptEncryptionZoneResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/encryption.proto)
+INFO: a message type ListReencryptionStatusRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/encryption.proto)
+INFO: a message type ReencryptEncryptionZoneRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/encryption.proto)
+INFO: a message type ListReencryptionStatusResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/encryption.proto)
+INFO: a message type StorageUuidsProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/HdfsServer.proto)
+INFO: a message type RemoveMountTableEntryRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type EnableNameserviceResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateMountTableEntryRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetDisabledNameservicesResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type StateStoreVersionRecordProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type AddMountTableEntryRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type DisableNameserviceResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeHeartbeatResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateMountTableEntryResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetRouterRegistrationResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type LeaveSafeModeResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamenodeRegistrationsRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type EnterSafeModeRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type EnterSafeModeResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type MountTableRecordProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetExpiredRegistrationsRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamespaceInfoResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetSafeModeResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type DisableNameserviceRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetDisabledNameservicesRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateNamenodeRegistrationResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamespaceInfoRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetSafeModeRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetMountTableEntriesRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type LeaveSafeModeRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetRouterRegistrationsResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeMembershipRecordProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type RouterHeartbeatRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetMountTableEntriesResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetRouterRegistrationRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type RouterHeartbeatResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeMembershipStatsRecordProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type AddMountTableEntryResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type RemoveMountTableEntryResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type RouterRecordProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type DisabledNameserviceRecordProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type EnableNameserviceRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeHeartbeatRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type RemoteLocationProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamenodeRegistrationsResponseProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetRouterRegistrationsRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateNamenodeRegistrationRequestProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type FederationNamespaceInfoProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto
+INFO: a message type GetJournaledEditsRequestProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/QJournalProtocol.proto)
+INFO: a message type GetJournaledEditsResponseProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/QJournalProtocol.proto)
+INFO: a message type ContainerResourceIncreaseProto was deleted in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type ContainerResourceIncreaseRequestProto was deleted in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type ContainerResourceDecreaseProto was deleted in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type AMBlackListingRequestProto was deleted in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type GetHdfsBlockLocationsResponseProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type GetHdfsBlockLocationsRequestProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type DiskBalancerSettingRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type CancelPlanResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type SubmitDiskBalancerPlanRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type SubmitDiskBalancerPlanResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type CancelPlanRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type DiskBalancerSettingResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type QueryPlanStatusRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type QueryPlanStatusResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: an added enum 'Flags' with no 0 value.
+INFO: a message type FsPermissionProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type StorageUuidsProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type ECSchemaOptionEntryProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type BlockTokenSecretProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type ErasureCodingPolicyProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type AddErasureCodingPolicyResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type ECSchemaProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type ReencryptionInfoProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type BlockECReconstructionCommandProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/DatanodeProtocol.proto)
+INFO: a message type FsPermissionProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/acl.proto)
+INFO: a message type AuthUserResponseProto was deleted in new version. (hadoop-common-project/hadoop-common/src/test/proto/test.proto)
+INFO: a message type UserResponseProto was added in new version. (hadoop-common-project/hadoop-common/src/test/proto/test.proto)
+INFO: a message type TransitionToObserverRequestProto was deleted in new version. (hadoop-common-project/hadoop-common/src/main/proto/HAServiceProtocol.proto)
+INFO: a message type TransitionToObserverResponseProto was deleted in new version. (hadoop-common-project/hadoop-common/src/main/proto/HAServiceProtocol.proto)
+INFO: a message type MaxTxIdProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/proto/bkjournal.proto
+INFO: a message type VersionProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/proto/bkjournal.proto
+INFO: a message type CurrentInprogressProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/proto/bkjournal.proto
+INFO: a message type EditLogLedgerProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/proto/bkjournal.proto
+INFO: a message type CredentialsKVProto was added in new version. (hadoop-common-project/hadoop-common/src/main/proto/Security.proto)
+INFO: a message type CredentialsProto was added in new version. (hadoop-common-project/hadoop-common/src/main/proto/Security.proto)
+INFO: a message type FileStatusProto was added due to a/an added file: hadoop-common-project/hadoop-common/src/main/proto/FSProtos.proto
+INFO: a message type FsPermissionProto was added due to a/an added file: hadoop-common-project/hadoop-common/src/main/proto/FSProtos.proto
+INFO: a message type RemoveMountTableEntryRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateMountTableEntryRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetMountTableEntriesRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeMembershipRecordProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type AddMountTableEntryRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetMountTableEntriesResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeHeartbeatResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateMountTableEntryResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeMembershipStatsRecordProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamenodeRegistrationsRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type AddMountTableEntryResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type RemoveMountTableEntryResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type MountTableRecordProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type NamenodeHeartbeatRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type RemoteLocationProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetExpiredRegistrationsRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamenodeRegistrationsResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamespaceInfoResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type FederationNamespaceInfoProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateNamenodeRegistrationRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type UpdateNamenodeRegistrationResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetNamespaceInfoRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs/src/main/proto/FederationProtocol.proto
+INFO: a message type GetErasureCodingPoliciesRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type GetErasureCodingPoliciesResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type UnsetErasureCodingPolicyResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type AddErasureCodingPoliciesResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type BlockECReconstructionInfoProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type AddErasureCodingPoliciesRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type SetErasureCodingPolicyRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type CodecProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type GetErasureCodingCodecsRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type GetErasureCodingPolicyResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type EnableErasureCodingPolicyResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type SetErasureCodingPolicyResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type GetErasureCodingCodecsResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type DisableErasureCodingPolicyResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type GetErasureCodingPolicyRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type DisableErasureCodingPolicyRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type RemoveErasureCodingPolicyRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type UnsetErasureCodingPolicyRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type EnableErasureCodingPolicyRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type RemoveErasureCodingPolicyResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto

@@ -1,0 +1,9 @@
+INFO: a message type Attribute was added in new version. (hbase-protocol/src/main/protobuf/WAL.proto)
+INFO: a message type UserLoad was added in new version. (hbase-protocol/src/main/protobuf/ClusterStatus.proto)
+INFO: a message type ClientMetrics was added in new version. (hbase-protocol/src/main/protobuf/ClusterStatus.proto)
+[0;33mWARNING: field 'compare_type' is required in one version but non-required in another! (hbase-protocol/src/main/protobuf/Client.proto)  [0m
+[0;33mWARNING: field 'comparator' is required in one version but non-required in another! (hbase-protocol/src/main/protobuf/Client.proto)  [0m
+[0;33mWARNING: field 'qualifier' is required in one version but non-required in another! (hbase-protocol/src/main/protobuf/Client.proto)  [0m
+[0;33mWARNING: field 'family' is required in one version but non-required in another! (hbase-protocol/src/main/protobuf/Client.proto)  [0m
+INFO: a message type ShellExecResponse was added due to a/an added file: hbase-endpoint/src/main/protobuf/ShellExecEndpoint.proto
+INFO: a message type ShellExecRequest was added due to a/an added file: hbase-endpoint/src/main/protobuf/ShellExecEndpoint.proto

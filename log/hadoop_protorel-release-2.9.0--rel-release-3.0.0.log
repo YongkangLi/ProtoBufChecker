@@ -1,0 +1,72 @@
+INFO: a message type OpBlockGroupChecksumProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/datatransfer.proto)
+INFO: a message type GetFsReplicatedBlockStatsRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type GetFsECBlockGroupStatsRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type GetFsECBlockGroupStatsResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type GetFsReplicatedBlockStatsResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type ErasureCodingSection was added in new version. (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/fsimage.proto)
+INFO: a message type ZoneReencryptionStatusProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/encryption.proto)
+INFO: a message type ReencryptEncryptionZoneResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/encryption.proto)
+INFO: a message type ListReencryptionStatusRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/encryption.proto)
+INFO: a message type ReencryptEncryptionZoneRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/encryption.proto)
+INFO: a message type ListReencryptionStatusResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/encryption.proto)
+INFO: a message type StorageUuidsProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/HdfsServer.proto)
+INFO: a message type ContainerResourceIncreaseProto was deleted in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type ContainerResourceIncreaseRequestProto was deleted in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type ContainerResourceDecreaseProto was deleted in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type AMBlackListingRequestProto was deleted in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type ResourceTypeInfoProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type StringLongMapProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type ResourceInformationProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_protos.proto)
+INFO: a message type GetHdfsBlockLocationsResponseProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type GetHdfsBlockLocationsRequestProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type DiskBalancerSettingRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type CancelPlanResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type SubmitDiskBalancerPlanRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type SubmitDiskBalancerPlanResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type CancelPlanRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type DiskBalancerSettingResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type QueryPlanStatusRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: a message type QueryPlanStatusResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientDatanodeProtocol.proto)
+INFO: an added enum 'Flags' with no 0 value.
+INFO: a message type FsPermissionProto was deleted in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type StorageUuidsProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type ECSchemaOptionEntryProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type BlockTokenSecretProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type ErasureCodingPolicyProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type AddErasureCodingPolicyResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type ECSchemaProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type ReencryptionInfoProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type GetAllResourceTypeInfoResponseProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto)
+INFO: a message type GetAllResourceTypeInfoRequestProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto)
+INFO: a message type BlockECReconstructionCommandProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/DatanodeProtocol.proto)
+INFO: a message type FsPermissionProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/acl.proto)
+INFO: a message type AuthUserResponseProto was deleted in new version. (hadoop-common-project/hadoop-common/src/test/proto/test.proto)
+INFO: a message type UserResponseProto was added in new version. (hadoop-common-project/hadoop-common/src/test/proto/test.proto)
+INFO: a message type MaxTxIdProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/proto/bkjournal.proto
+INFO: a message type VersionProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/proto/bkjournal.proto
+INFO: a message type CurrentInprogressProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/proto/bkjournal.proto
+INFO: a message type EditLogLedgerProto was deleted due to a/an removed file: hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/src/main/proto/bkjournal.proto
+INFO: a message type CredentialsKVProto was added in new version. (hadoop-common-project/hadoop-common/src/main/proto/Security.proto)
+INFO: a message type CredentialsProto was added in new version. (hadoop-common-project/hadoop-common/src/main/proto/Security.proto)
+INFO: a message type FileStatusProto was added due to a/an added file: hadoop-common-project/hadoop-common/src/main/proto/FSProtos.proto
+INFO: a message type FsPermissionProto was added due to a/an added file: hadoop-common-project/hadoop-common/src/main/proto/FSProtos.proto
+INFO: a message type GetErasureCodingPoliciesRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type GetErasureCodingPoliciesResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type UnsetErasureCodingPolicyResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type AddErasureCodingPoliciesResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type BlockECReconstructionInfoProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type AddErasureCodingPoliciesRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type SetErasureCodingPolicyRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type CodecProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type GetErasureCodingCodecsRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type GetErasureCodingPolicyResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type EnableErasureCodingPolicyResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type SetErasureCodingPolicyResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type GetErasureCodingCodecsResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type DisableErasureCodingPolicyResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type GetErasureCodingPolicyRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type DisableErasureCodingPolicyRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type RemoveErasureCodingPolicyRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type UnsetErasureCodingPolicyRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type EnableErasureCodingPolicyRequestProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto
+INFO: a message type RemoveErasureCodingPolicyResponseProto was added due to a/an added file: hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/erasurecoding.proto

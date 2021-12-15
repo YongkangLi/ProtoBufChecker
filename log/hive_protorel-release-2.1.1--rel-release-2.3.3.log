@@ -1,0 +1,39 @@
+INFO: a message type RowIndex was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type Metadata was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type TimestampStatistics was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type BinaryStatistics was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type BloomFilter was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type FileTail was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type PostScript was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type Stream was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type BucketStatistics was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type ColumnStatistics was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type DateStatistics was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type StripeStatistics was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type RowIndexEntry was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type ColumnEncoding was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type Type was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type DecimalStatistics was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type StringStatistics was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type StripeFooter was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type DoubleStatistics was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type BloomFilterIndex was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type UserMetadataItem was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type Footer was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type StripeInformation was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type IntegerStatistics was deleted due to a/an removed file: orc/src/protobuf/orc_proto.proto
+INFO: a message type VertexIdentifier was deleted in new version. (llap-common/src/protobuf/LlapDaemonProtocol.proto)
+[31mERROR: tag number of field 'processor_descriptor' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
+[31mERROR: tag number of field 'dag_name' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
+[31mERROR: tag number of field 'token_identifier' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
+[31mERROR: tag number of field 'vertex_parallelism' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
+[31mERROR: tag number of field 'vertex_name' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
+[31mERROR: tag number of field 'input_specs' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
+[31mERROR: tag number of field 'output_specs' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
+[31mERROR: tag number of field 'grouped_input_specs' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
+[31mERROR: tag number of field 'query_identifier' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
+[31mERROR: tag number of field 'delete_delay' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
+INFO: a message type LlapOutputSocketInitMessage was added in new version. (llap-common/src/protobuf/LlapDaemonProtocol.proto)
+INFO: a message type NotTezEvent was added in new version. (llap-common/src/protobuf/LlapDaemonProtocol.proto)
+INFO: a message type PrimaryKey was added in new version. (metastore/src/protobuf/org/apache/hadoop/hive/metastore/hbase/hbase_metastore_proto.proto)
+INFO: a message type ForeignKeys was added in new version. (metastore/src/protobuf/org/apache/hadoop/hive/metastore/hbase/hbase_metastore_proto.proto)

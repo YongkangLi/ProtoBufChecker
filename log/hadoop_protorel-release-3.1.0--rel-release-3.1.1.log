@@ -1,0 +1,18 @@
+[31mERROR: a required field 'md5' is deleted in new version!!! (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/datatransfer.proto) [0m
+[31mERROR: a required field 'blockChecksum' is added in new version!!! (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/datatransfer.proto) [0m
+INFO: a message type UpgradeStatusResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type UpgradeStatusRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/ClientNamenodeProtocol.proto)
+INFO: a message type EnableNameserviceResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto)
+INFO: a message type GetDisabledNameservicesResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto)
+INFO: a message type DisableNameserviceResponseProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto)
+INFO: a message type DisableNameserviceRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto)
+INFO: a message type GetDisabledNameservicesRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto)
+INFO: a message type DisabledNameserviceRecordProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto)
+INFO: a message type EnableNameserviceRequestProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/proto/FederationProtocol.proto)
+INFO: a message type BlockChecksumOptionsProto was added in new version. (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/hdfs.proto)
+INFO: a message type RestartServiceRequestProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto)
+INFO: a message type RestartServiceResponseProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto)
+INFO: a message type CompInstancesUpgradeResponseProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto)
+INFO: a message type CompInstancesUpgradeRequestProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto)
+INFO: a message type UpgradeServiceResponseProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto)
+INFO: a message type UpgradeServiceRequestProto was added in new version. (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-services/hadoop-yarn-services-core/src/main/proto/ClientAMProtocol.proto)
