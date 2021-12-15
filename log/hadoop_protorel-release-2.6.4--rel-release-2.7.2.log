@@ -1,2 +1,0 @@
-[31mERROR: a required field 'diskspaceQuota' is deleted in new version!!! (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/ClientNamenodeProtocol.proto) [0m
-[31mERROR: a required field 'storagespaceQuota' is added in new version!!! (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/ClientNamenodeProtocol.proto) [0m

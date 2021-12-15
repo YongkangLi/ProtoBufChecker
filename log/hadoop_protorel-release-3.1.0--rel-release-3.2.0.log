@@ -1,2 +1,0 @@
-[31mERROR: a required field 'md5' is deleted in new version!!! (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/datatransfer.proto) [0m
-[31mERROR: a required field 'blockChecksum' is added in new version!!! (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/datatransfer.proto) [0m

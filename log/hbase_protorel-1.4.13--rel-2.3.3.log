@@ -1,5 +1,0 @@
-[31mERROR: tag number of field 'bandwidth' has changed across versions!!! (hbase-protocol/src/main/protobuf/ZooKeeper.proto) [0m
-[0;33mWARNING: field 'compare_type' is required in one version but non-required in another! (hbase-protocol/src/main/protobuf/Client.proto)  [0m
-[0;33mWARNING: field 'comparator' is required in one version but non-required in another! (hbase-protocol/src/main/protobuf/Client.proto)  [0m
-[0;33mWARNING: field 'qualifier' is required in one version but non-required in another! (hbase-protocol/src/main/protobuf/Client.proto)  [0m
-[0;33mWARNING: field 'family' is required in one version but non-required in another! (hbase-protocol/src/main/protobuf/Client.proto)  [0m

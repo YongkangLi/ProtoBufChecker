@@ -1,6 +1,0 @@
-[31mERROR: a required field 'blockChecksum' is deleted in new version!!! (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/datatransfer.proto) [0m
-[31mERROR: a required field 'md5' is added in new version!!! (hadoop-hdfs-project/hadoop-hdfs-client/src/main/proto/datatransfer.proto) [0m
-[31mERROR: tag number of field 'nodeLabels' has changed across versions!!! (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/server/yarn_server_resourcemanager_service_protos.proto) [0m
-INFO: an deleted enum 'Flags' with no 0 value.
-[31mERROR: tag number of field 'nodeLabels' has changed across versions!!! (hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/proto/yarn_service_protos.proto) [0m
-[31mERROR: tag number of field 'fullBlockReportLeaseId' has changed across versions!!! (hadoop-hdfs-project/hadoop-hdfs/src/main/proto/DatanodeProtocol.proto) [0m
