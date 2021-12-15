@@ -1,2 +1,0 @@
-INFO: a message type FileTail was added in new version. (orc/src/protobuf/orc_proto.proto)
-INFO: a message type Index was added in new version. (metastore/src/protobuf/org/apache/hadoop/hive/metastore/hbase/hbase_metastore_proto.proto)

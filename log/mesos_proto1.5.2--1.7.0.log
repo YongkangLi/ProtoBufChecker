@@ -146,5 +146,3 @@
 [0m
 [31mError happened when compiling./mesos/src/resource_provider/state.proto !
 [0m
-INFO: a message type Label was deleted in new version. (include/mesos/docker/v1.proto)
-INFO: a message type MapMessage was added in new version. (3rdparty/stout/tests/protobuf_tests.proto)

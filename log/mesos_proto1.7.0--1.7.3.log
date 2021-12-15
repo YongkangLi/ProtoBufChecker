@@ -146,4 +146,3 @@
 [0m
 [31mError happened when compiling./mesos/src/resource_provider/state.proto !
 [0m
-INFO: a message type ImageManifest was added due to a/an added file: include/mesos/docker/v2_2.proto

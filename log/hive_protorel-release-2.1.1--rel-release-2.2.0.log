@@ -1,4 +1,3 @@
-INFO: a message type VertexIdentifier was deleted in new version. (llap-common/src/protobuf/LlapDaemonProtocol.proto)
 [31mERROR: tag number of field 'processor_descriptor' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
 [31mERROR: tag number of field 'dag_name' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
 [31mERROR: tag number of field 'token_identifier' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
@@ -9,5 +8,3 @@ INFO: a message type VertexIdentifier was deleted in new version. (llap-common/s
 [31mERROR: tag number of field 'grouped_input_specs' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
 [31mERROR: tag number of field 'query_identifier' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
 [31mERROR: tag number of field 'delete_delay' has changed across versions!!! (llap-common/src/protobuf/LlapDaemonProtocol.proto) [0m
-INFO: a message type LlapOutputSocketInitMessage was added in new version. (llap-common/src/protobuf/LlapDaemonProtocol.proto)
-INFO: a message type NotTezEvent was added in new version. (llap-common/src/protobuf/LlapDaemonProtocol.proto)

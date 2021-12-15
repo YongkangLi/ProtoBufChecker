@@ -161,8 +161,3 @@
 [31mError happened when compiling./mesos/src/resource_provider/state.proto !
 [0m
 [0;33mWARNING: field 'name' is required in one version but non-required in another! (include/mesos/v1/mesos.proto)  [0m
-INFO: a message type CSIPluginEndpoint was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type FloatMessage was added in new version. (3rdparty/stout/tests/protobuf_tests.proto)
-INFO: a message type VolumeCapability was deleted due to a/an removed file: include/mesos/csi/types.proto
-INFO: a message type TestSlaveMessage was added due to a/an added file: src/tests/common/http_tests.proto
-INFO: a message type ParentMessage was added due to a/an added file: src/tests/common/http_tests.proto

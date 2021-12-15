@@ -146,24 +146,3 @@
 [0m
 [31mError happened when compiling./mesos/src/resource_provider/state.proto !
 [0m
-INFO: a message type OperationID was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type MountPropagation was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type UUID was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type DrainInfo was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type TaskResourceLimitation was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type CSIPluginContainerInfo was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type SeccompInfo was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type Operation was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type OperationStatus was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type OfferFilters was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type CSIPluginEndpoint was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type CSIPluginInfo was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type DrainConfig was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type Label was deleted in new version. (include/mesos/docker/v1.proto)
-INFO: a message type MapMessage was added in new version. (3rdparty/stout/tests/protobuf_tests.proto)
-INFO: a message type EnumMessage was added in new version. (3rdparty/stout/tests/protobuf_tests.proto)
-INFO: a message type FloatMessage was added in new version. (3rdparty/stout/tests/protobuf_tests.proto)
-INFO: a message type ImageManifest was added due to a/an added file: include/mesos/docker/v2_2.proto
-INFO: a message type Message was added due to a/an added file: 3rdparty/libprocess/src/tests/benchmarks.proto
-INFO: a message type TestSlaveMessage was added due to a/an added file: src/tests/common/http_tests.proto
-INFO: a message type ParentMessage was added due to a/an added file: src/tests/common/http_tests.proto

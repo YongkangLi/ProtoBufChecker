@@ -138,15 +138,3 @@
 [0m
 [31mError happened when compiling./mesos/src/resource_provider/state.proto !
 [0m
-INFO: a message type OperationID was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type MountPropagation was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type UUID was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type TaskResourceLimitation was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type CSIPluginContainerInfo was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type Operation was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type OperationStatus was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type CSIPluginInfo was added in new version. (include/mesos/v1/mesos.proto)
-INFO: a message type Label was deleted in new version. (include/mesos/docker/v1.proto)
-INFO: a message type MapMessage was added in new version. (3rdparty/stout/tests/protobuf_tests.proto)
-INFO: a message type EnumMessage was added in new version. (3rdparty/stout/tests/protobuf_tests.proto)
-INFO: a message type Message was added due to a/an added file: 3rdparty/libprocess/src/tests/benchmarks.proto
