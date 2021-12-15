@@ -11,6 +11,7 @@ public class Main {
         options.addOption("app", true, "directory of the software");
         options.addOption("v1", true, "tag of old version");
         options.addOption("v2", true, "tag of new versions");
+        options.addOption("h", "help", false, "help information");
 
         String oldVersion = null;
         String newVersion = null;
@@ -18,7 +19,10 @@ public class Main {
         CommandLineParser commandLineParser = new DefaultParser();
         try {
             CommandLine commandLine = commandLineParser.parse(options, args);
-            if (commandLine.hasOption("app") && commandLine.hasOption("v1") && commandLine.hasOption("v2")) {
+            if (commandLine.hasOption("h")) {
+                HelpFormatter helpFormatter = new HelpFormatter();
+                helpFormatter.printHelp("ProtoBufChecker", options);
+            } else if (commandLine.hasOption("app") && commandLine.hasOption("v1") && commandLine.hasOption("v2")) {
                 String software = commandLine.getOptionValue("app");
                 String directory = "./" + software;
                 String oldTag = commandLine.getOptionValue("v1");
@@ -46,7 +50,7 @@ public class Main {
                 } else {
                     System.out.println("Invalid software name: " + software + "!");
                 }
-            } else {
+            } else if (commandLine.hasOption("o") || commandLine.hasOption("n")) {
                 if (commandLine.hasOption("o")) {
                     oldVersion = commandLine.getOptionValue("o");
                     if (!new File(oldVersion).exists()) {
@@ -62,12 +66,20 @@ public class Main {
                         newVersion = null;
                     }
                 }
+
                 if (oldVersion != null && newVersion != null) {
                     Utils.compareVersions(new Version(oldVersion), new Version(newVersion));
+                } else {
+                    System.out.println("Wrong path(s) or missing path!");
+                    System.out.println("Please use \"-h\" or \"--help\" parameter to see the usage.");
                 }
+            } else {
+                System.out.println("Invalid usage!");
+                System.out.println("Please use \"-h\" or \"--help\" parameter to see the usage.");
             }
         } catch (ParseException e) {
-            e.printStackTrace();
+            System.out.println("Command line parameters parsing Exceptions: probably missing arguments.");
+            System.out.println("Please use \"-h\" or \"--help\" parameter to see the usage.");
         }
     }
 }
