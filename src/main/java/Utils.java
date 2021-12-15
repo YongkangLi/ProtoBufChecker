@@ -115,24 +115,45 @@ public class Utils {
 
     public static void compareDescriptorSets(DescriptorSet older, DescriptorSet newer, Path relativePath) {
         for (String filename : older.getProtoBufFiles().keySet()) {
+            DescriptorSet.ProtoBufFile oldProtoBufFile = older.getProtoBufFiles().get(filename);
             if (newer.getProtoBufFiles().containsKey(filename)) {
-               DescriptorSet.ProtoBufFile oldProtoBufFile = older.getProtoBufFiles().get(filename);
                DescriptorSet.ProtoBufFile newProtoBufFile = newer.getProtoBufFiles().get(filename);
                for (String messageType : oldProtoBufFile.getMessageDefinitions().keySet()) {
                    if (newProtoBufFile.getMessageDefinitions().containsKey(messageType)) {
                        MessageDefinition oldMessageDefinition = oldProtoBufFile.getMessageDefinitions().get(messageType);
                        MessageDefinition newMessageDefinition = newProtoBufFile.getMessageDefinitions().get(messageType);
                        compareMessageDefinition(oldMessageDefinition, newMessageDefinition, relativePath);
+                   } else {
+                       System.out.println("INFO: a message type " + messageType + " was deleted in new version. (" + relativePath + ")");
+                   }
+               }
+               for (String messageType : newProtoBufFile.getMessageDefinitions().keySet()) {
+                   if (!oldProtoBufFile.getMessageDefinitions().containsKey(messageType)) {
+                       System.out.println("INFO: a message type " + messageType + " was added in new version. (" + relativePath + ")");
                    }
                }
             }
         }
     }
 
+    private static void check(DescriptorSet descriptorSet, String action, String reason, Path relativePath) {
+        for (String fileName : descriptorSet.getProtoBufFiles().keySet()) {
+            for (String messageType : descriptorSet.getProtoBufFiles().get(fileName).getMessageDefinitions().keySet()) {
+                System.out.println("INFO: a message type " + messageType + " was " + action + " due to a/an " + reason + " file: " + relativePath);
+            }
+        }
+    }
     public static void compareVersions(Version older, Version newer) {
         for (Path relativePath : older.getDescriptorSets().keySet()) {
             if (newer.getDescriptorSets().containsKey(relativePath)) {
                 compareDescriptorSets(older.getDescriptorSets().get(relativePath), newer.getDescriptorSets().get(relativePath), relativePath);
+            } else {
+                check(older.getDescriptorSets().get(relativePath), "deleted", "removed", relativePath);
+            }
+        }
+        for (Path relativePath : newer.getDescriptorSets().keySet()) {
+            if (!older.getDescriptorSets().containsKey(relativePath)) {
+                check(newer.getDescriptorSets().get(relativePath), "added", "added", relativePath);
             }
         }
     }
