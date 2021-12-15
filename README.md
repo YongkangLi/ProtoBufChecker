@@ -12,7 +12,7 @@ Protocols evolve over time. Developers can update any protocol to meet the progr
 
     (2). The tag number of a field has been changed.
 
-    (3).  A  required field has been changed to non-required. 
+    (3). A required field has been changed to non-required. 
     
     (4). Added or deleted an enum with no 0 value.
 
@@ -60,7 +60,7 @@ Build executable jar with:
 
    `java -jar target/ProtoBufChecker-1.0-SNAPSHOT.jar -o hbase-rel-2.2.6 -n hbase-rel-2.3.3`
 
-## Reproduce Experiments in the Paper Section 6.2.2
+## About the [Paper](https://dl.acm.org/doi/10.1145/3477132.3483577) Section 6.2.2
 
 1. Checkout the required applications in the DUPChecker/ directory:
 
